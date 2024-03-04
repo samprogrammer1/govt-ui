@@ -13,6 +13,42 @@ window.addEventListener("scroll", function () {
   }
 });
 
+
+
+
+
+// input textarea remaining 
+function ApplicationDetailsCharacters() {
+  var inputText = document.getElementById("application-details").value;
+  var remaining = 4000 - inputText.length;
+  
+  if (remaining < 0) {
+    inputText.value = inputText.substring(0, 50);
+    remaining = 0;
+  }
+
+  document.getElementById("remainingapplication-details").innerText = " " + remaining;
+}
+
+function RemainingCharacters() {
+  var inputText = document.getElementById("Residential-Address").value;
+  var remaining = 150 - inputText.length;
+  
+  if (remaining < 0) {
+    inputText.value = inputText.substring(0, 50);
+    remaining = 0;
+  }
+
+  document.getElementById("remainingResidential").innerText = " " + remaining;
+}
+
+
+
+
+$(document).ready(function() {
+  $('.exclude-from-select2').select2();
+});
+
 $(document).ready(function(){
 	$(window).scroll(function () {
 			if ($(this).scrollTop() > 50) {
@@ -64,7 +100,9 @@ jQuery(document).ready(function ($) {
   slider();
 
   var siteMenuClone = function () {
-    $('<div class="site-mobile-menu"></div>').prependTo(".site-wrap");
+    $('<div class="site-wrap-overlay"></div>').appendTo("body");
+
+    $('<div class="site-mobile-menu"></div>').prependTo("body");
 
     $('<div class="site-mobile-menu-header"></div>').prependTo(
       ".site-mobile-menu"

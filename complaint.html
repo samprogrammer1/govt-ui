@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>GOVT UI</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:300,400,700">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+
+
+</head>
+
+<body>
+    <button id="scrollButton" onclick="scrollToTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+            fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5" />
+        </svg></button>
+    <!-- <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a> -->
+    <!-- <div class="container-fluid">
+        <div class="container">
+            <div class="row d-flex justify-content-between p-2">
+                <div class="col-4">
+                    asdjaldsad
+                </div>
+                <div class="col-4">
+                    sajflaksjda
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="site-wrap sticky-top">
+        <header class="site-navbar" role="banner">
+            <div class="site-navbar-top">
+                <div class="container">
+                    <div class="row align-items-right">
+
+                        <div class="col-4 mb-3 mb-md-0 col-md-4 order-1 order-md-2">
+                            <div class="site-logo">
+                                <a href="index.html" class="js-logo-clone">Utthan</a>
+                            </div>
+                        </div>
+
+                        <div class="col-8 col-md-8 order-3 order-md-3 text-right">
+                            <div class="site-top-icons">
+                                <ul>
+                                    <li><a href="#" class="officer-login-text">Member</a></li>
+                                    <li><a href="#"><span class="icon icon-person"></span></a></li>
+                                    <li class="d-inline-block  ml-md-0"><a href="#"
+                                            class="site-menu-toggle js-menu-toggle"><span class="icon-menu"></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="site-navigation text-right text-md-center" role="navigation">
+                <div class="container">
+                    <ul class="site-menu js-clone-nav d-none d-md-block">
+                        <li class="has-children active">
+                            <a href="index.html">Home</a>
+                            <ul class="dropdown">
+                                <li><a href="#">Menu One</a></li>
+                                <li><a href="#">Menu Two</a></li>
+                                <li><a href="#">Menu Three</a></li>
+                                <li class="has-children">
+                                    <a href="#">Sub Menu</a>
+                                    <ul class="dropdown">
+                                        <li><a href="#">Menu One</a></li>
+                                        <li><a href="#">Menu Two</a></li>
+                                        <li><a href="#">Menu Three</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-children">
+                            <a href="about.html">About</a>
+                            <ul class="dropdown">
+                                <li><a href="#">Menu One</a></li>
+                                <li><a href="#">Menu Two</a></li>
+                                <li><a href="#">Menu Three</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="#">Catalogue</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div> -->
+    <section class="complaint-header">
+        <div class="container-fluid bg-dark py-2 text-center ">
+            <h2 class="text-light">Company</h2>
+        </div>
+    </section>
+
+    <!--========= Complaint Form =================================-->
+    <section class="complain_form my-5">
+        <div class="container">
+            <form>
+                <div class="card card-shadow p-3">
+                    <div class="container ">
+                        <div class="heading px-1 py-1 text-center">
+                            <h6 class="text-light">Application Details</h6>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row mt-3">
+                            <div class="col-lg-3 col-md-6 mt-2">
+                                <div class="form-group">
+                                    <label for="name" class="required">Name</label>
+                                    <input type="text" name="name" class="form-control mt-1" id="name"
+                                        placeholder="Enter name">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mt-2">
+                                <div class="form-group ">
+                                    <label for="father-husband-name " class="required">Father/Husband Name</label>
+                                    <input type="text" name="father-husband-name" class="form-control  mt-1"
+                                        id="father-husband-name" placeholder="Enter email">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mt-2">
+                                <div class="form-group">
+                                    <label for="email" class="required">Gender</label>
+                                    <div class="mt-1">
+                                        <select name="gender" class="form-select mt- exclude-from-select2 " required>
+                                            <option value="male">Male</option>
+                                            <option value="female">Female</option>
+                                            <option value="Transgender">Transgender</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mt-2">
+                                <div class="form-group">
+                                    <label for="mobile-no" class="required">Mobile No.</label>
+                                    <input type="number" name="mobile-no" class="form-control mt-1" id="mobile-no"
+                                        placeholder="Enter mobile no.">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mt-2">
+                                <div class="form-group">
+                                    <label for="number">Mobile No. 2</label>
+                                    <input type="number" name="mobile-no2" class="form-control mt-1" id="email"
+                                        placeholder="Enter mobile no.">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 mt-2">
+                                <div class="form-group">
+                                    <label for="email" class="required">Email</label>
+                                    <input type="email" name="email" class="form-control mt-1" id="email"
+                                        placeholder="Enter email">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-shadow p-3 mt-4">
+                    <div class="container ">
+                        <div class="heading px-1 py-1 text-center">
+                            <h6 class="text-light">Complaint Detail</h6>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row mt-3">
+                            <div class="col-lg-2 mt-2">
+                                <div class="">
+                                    <label class="required">Reference Type</label>
+                                    <div class="mt-2">
+                                        <div class="form-check ">
+                                            <input class="form-check-input" type="radio" name="reference-type"
+                                                id="ComplaintRadio" value="Complaint">
+                                            <label class="form-check-label" for="ComplaintRadio">Complaint</label>
+                                        </div>
+                                        <div class="form-check ">
+                                            <input class="form-check-input" type="radio" name="reference-type"
+                                                id="DemandRadio" value="demand">
+                                            <label class="form-check-label" for="DemandRadio">Demand</label>
+                                        </div>
+                                        <div class="form-check ">
+                                            <input class="form-check-input" type="radio" name="reference-type"
+                                                id="SuggestionRadio" value="suggestion">
+                                            <label class="form-check-label" for="SuggestionRadio">Suggestion</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="reference-type"
+                                                id="OthersRadio" value="others">
+                                            <label class="form-check-label" for="OthersRadio">Others</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-6 mt-2">
+                                <div class="form-group">
+                                    <label for="email" class="required">Gender</label>
+                                    <div class="mt-1">
+                                        <select name="gender" class="form-select mt- exclude-from-select2 " required>
+                                            <option value="male">Male</option>
+                                            <option value="female">Female</option>
+                                            <option value="Transgender">Transgender</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-6 mt-2">
+                                <div class="form-group">
+                                    <label for="email" class="required">Gender</label>
+                                    <div class="mt-1">
+                                        <select name="gender" class="form-select mt- exclude-from-select2 " required>
+                                            <option value="male">Male</option>
+                                            <option value="female">Female</option>
+                                            <option value="Transgender">Transgender</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 mt-2">
+                                <div class="form-group">
+                                    <label for="application-details" class="required">Application Details </label> <span
+                                        class="remaining" id="remainingapplication-details">4000</span>
+                                    <textarea class="form-control mt-2" oninput="ApplicationDetailsCharacters()"
+                                        name="application-details" id="application-details" rows="3"></textarea>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-shadow p-3 mt-4">
+                    <div class="container ">
+                        <div class="heading px-1 py-1 text-center">
+                            <h6 class="text-light">Complaint/Demand/Suggestion area information</h6>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row mt-3">
+                            <div class="col-lg-3 col-md-6 mt-2">
+                                <div class="form-group">
+                                    <label for="email" class="required">District</label>
+                                    <div class="mt-1">
+                                        <select name="gender" class="form-select mt- exclude-from-select2 " required>
+                                            <option value="male">Male</option>
+                                            <option value="female">Female</option>
+                                            <option value="Transgender">Transgender</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mt-2">
+                                <div class="form-group">
+                                    <label for="email">Tehsil</label>
+                                    <div class="mt-1">
+                                        <select name="gender" class="form-select mt- exclude-from-select2 ">
+                                            <option value="male">Male</option>
+                                            <option value="female">Female</option>
+                                            <option value="Transgender">Transgender</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mt-2">
+                                <div class="form-group">
+                                    <label for="email">Block</label>
+                                    <div class="mt-1">
+                                        <select name="gender" class="form-select mt- exclude-from-select2 ">
+                                            <option value="male">Male</option>
+                                            <option value="female">Female</option>
+                                            <option value="Transgender">Transgender</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mt-2">
+                                <div class="form-group">
+                                    <label for="email">Village Panchayat</label>
+                                    <div class="mt-1">
+                                        <select name="gender" class="form-select mt- exclude-from-select2 ">
+                                            <option value="male">Male</option>
+                                            <option value="female">Female</option>
+                                            <option value="Transgender">Transgender</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mt-2">
+                                <div class="form-group">
+                                    <label for="email">Rajsva Village</label>
+                                    <div class="mt-1">
+                                        <select name="gender" class="form-select mt- exclude-from-select2 ">
+                                            <option value="male">Male</option>
+                                            <option value="female">Female</option>
+                                            <option value="Transgender">Transgender</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mt-2">
+                                <div class="form-group">
+                                    <label for="email"> Thana</label>
+                                    <div class="mt-1">
+                                        <select name="gender" class="form-select mt- exclude-from-select2 " required>
+                                            <option value="male">Male</option>
+                                            <option value="female">Female</option>
+                                            <option value="Transgender">Transgender</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 mt-2">
+                                <div class="form-group">
+                                    <label for="Residential-Address" class="required">Residential Address</label> <span
+                                        class="remaining" id="remainingResidential">150</span>
+                                    <textarea class="form-control mt-2" oninput="RemainingCharacters()"
+                                        name="Residential-Address" id="Residential-Address" rows="3" maxlength="150"></textarea>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-shadow p-3 mt-4">
+                    <div class="container ">
+                        <div class="heading px-1 py-1 text-center">
+                            <h6 class="text-light">Reference document and details of old references</h6>
+                        </div>
+                    </div>
+                    <div class="container">
+
+                        <div class="row mt-3">
+                            <div class="col-lg-3 my-2 d-flex align-items-center">
+                                <div class="d-flex gap-2">
+                                    <label for="Reference-Type" class="required">Reference Type</label>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="Reference-Type" checked>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mt-2">
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <label for="name" class="required">Reference No 1</label>
+                                        <input type="text" name="name" class="form-control mt-1" id="name"
+                                            placeholder="Enter name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mt-2">
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <label for="name" class="required">Reference No 2</label>
+                                        <input type="text" name="name" class="form-control mt-1" id="name"
+                                            placeholder="Enter name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 mt-2 mt-md-4">
+                                <p class="text-danger">Please upload only JPG/JPEG/PNG. (File Upload Maximum 500KB) कृपया PDF और फाइल का अधिकतम साइज़ 500KB तक ही अपलोड करे!</p>
+                            </div>
+                            <div class="col-lg-6 col-md-6 mt-lg-4">
+                                <div class="form-group">
+                                    <label for="formFile" class="form-label">Click for Upload Reference Document.</label>
+                                    <input class="form-control" type="file" id="formFile">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 mt-2 mt-md-4">
+                                <p class="text-danger">Please upload only PDF. (File Upload Maximum 500KB) कृपया PDF और फाइल का अधिकतम साइज़ 500KB तक ही अपलोड करे!</p>
+                            </div>
+                            <div class="col-lg-6 col-md-6 mt-lg-4">
+                                <div class="form-group">
+                                    <label for="formFile" class="form-label">Click for Upload Reference Document.</label>
+                                    <input class="form-control" type="file" id="formFile">
+                                </div>
+                            </div>
+
+
+                            <div class="btn-container d-flex flex-wrap justify-content-center mt-5 gap-2">
+                                <button type="button" class="btn btn-success fw-bold px-3 ">SAVE COMPLAINT</button>
+                                <button type="button" class="btn btn-warning fw-bold px-3 ">RESET</button>
+                                <button type="button" class="btn btn-danger fw-bold px-3 ">BACK TO HOME</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+
+    </script>
+
+</body>
+
+</html>

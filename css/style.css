@@ -6,12 +6,6 @@
   --gradient : linear-gradient(315.01deg, rgb(255, 113, 13) 8.31%, rgb(255, 184, 0) 88.22%);
 }
 
-body {
-  line-height: 1.7;
-  color: #8c92a0;
-  font-weight: 300;
-  font-size: 16px;
-}
 
 ::-moz-selection {
   background: #000;
@@ -43,7 +37,7 @@ a:hover {
   transition: .3s all ease-in-out;
   background: rgba(0, 0, 0, 0.6);
   content: "";
-  position: absolute;
+  position: fixed;
   z-index: 2000;
   top: 0;
   left: 0;
@@ -51,6 +45,12 @@ a:hover {
   bottom: 0;
   opacity: 0;
   visibility: hidden;
+}
+
+
+body.offcanvas-menu-open .site-wrap-overlay {
+  opacity: 1;
+  visibility: visible;
 }
 
 .offcanvas-menu .site-wrap {
@@ -96,9 +96,9 @@ a:hover {
 }
 
 .btn.btn-primary {
-  font-size: 17px;
-  font-weight: 300;
-  letter-spacing: .2em;
+  /* font-size: 17px; */
+  /* font-weight: 300; */
+  /* letter-spacing: .2em; */
 }
 
 .btn:hover {
@@ -107,21 +107,6 @@ a:hover {
   top: -2px;
 }
 
-.form-control {
-  height: 43px;
-}
-
-.form-control:active,
-.form-control:focus {
-  border-color: #7971ea;
-}
-
-.form-control:hover,
-.form-control:active,
-.form-control:focus {
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
-}
 
 .site-section {
   padding: 2.5em 0;

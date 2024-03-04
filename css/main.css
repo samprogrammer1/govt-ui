@@ -10,6 +10,21 @@
     display: none;
     
 }
+
+.required:after {
+  content:"*\00a0";
+  color:red;
+}
+a {
+  text-decoration: none;
+}
+.hr {
+  height: 1px;
+  color: inherit;
+    background-color: currentColor;
+    border: 0;
+    opacity: .25;
+}
 #scrollButton {
     display: none;
     position: fixed;
@@ -58,6 +73,10 @@
     to {
         background-position: 1600px 130%, 3150px 130%, 5300px 130%;
     }
+}
+
+.card-shadow {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.123);
 }
 
 .message-cards h1 {
@@ -170,6 +189,20 @@
     transform: rotateY(180deg);
   }
 
+
+.complain_form .heading {
+  background-color: #01cc66;
+}
+
+.select2  {
+  width: 100% !important;
+}
+
+.remaining {
+  padding-inline: 10px;
+  background-color: rgb(255, 113, 13);;
+  color: white;
+}
 
 
 footer ul {
